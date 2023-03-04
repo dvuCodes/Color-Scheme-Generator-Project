@@ -1,0 +1,82 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+/* typography */
+
+p {
+  margin: 0;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  font-weight: bold;
+}
+
+/* General layouts + flex */
+
+body,
+.scheme-container {
+  display: flex;
+  flex-direction: column;
+}
+
+body {
+  font-family: 'Oxygen', sans-serif;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
+/* Nav Bar layout*/
+
+form {
+  display: flex;
+  align-items: center;
+  height: 10vh;
+  width: 100%;
+  padding: 0.625em 0.5em;
+  justify-content: space-between;
+}
+
+.submit-btn,
+.scheme-mode {
+  font-size: 1rem;
+  font-weight: 400;
+  height: 2em;
+  border-radius: 5px;
+  border: 1.5px solid #d1d5db;
+  background-color: inherit;
+  font-family: inherit;
+  cursor: pointer;
+}
+
+.submit-btn {
+  word-wrap: break-word;
+}
+
+.scheme-mode {
+  width: 10em;
+  text-transform: capitalize;
+}
+
+input {
+  height: 2.625em;
+  width: 3.8125em;
+  border: none;
+}
+
+/* scheme container layout */
+
+.scheme-container {
+  flex-wrap: wrap;
+  text-align: center;
+  height: 80vh;
+  width: 100%;
+}
+
+.color-output {
+  width: 20%;
+  height: 95%;
+  margin-bottom: 0.4em;
+}

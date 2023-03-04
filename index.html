@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- font -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- css -->
+
+    <link rel="stylesheet" href="/css/style.css" />
+    <title>Color Scheme Generator</title>
+  </head>
+  <body>
+    <form class="nav-bar">
+      <input
+        type="color"
+        value="#FF8040"
+        class="color-picker"
+        id="color-picker"
+      />
+      <select name="mode" class="scheme-mode" id="scheme-mode">
+        <option value="monochrome">Monochrome</option>
+        <option value="monochrome-dark">Monochrome Dark</option>
+        <option value="monochrome-light">Monochrome Light</option>
+        <option value="analogic">Analogic</option>
+        <option value="complement">Complement</option>
+        <option value="analogic-complement">analogic-complement</option>
+        <option value="triad">triad</option>
+        <option value="quad">quad</option>
+      </select>
+      <button type="submit" class="submit-btn" id="submit-btn">
+        Get color scheme
+      </button>
+    </form>
+
+    <section class="scheme-container" id="scheme-container">
+      <div class="color-output" style="background: #f55a5a"></div>
+      <p class="color-rgb">#F55A5A</p>
+      <div class="color-output" style="background: #2b283a"></div>
+      <p class="color-rgb">#2b283a</p>
+      <div class="color-output" style="background: #fbf3ab"></div>
+      <p class="color-rgb">#fbf3ab</p>
+      <div class="color-output" style="background: #aad1b6"></div>
+      <p class="color-rgb">#aad1b6</p>
+      <div class="color-output" style="background: #a626d3"></div>
+      <p class="color-rgb">#a626d3</p>
+    </section>
+
+    <script src="scripts/index.js" type="module"></script>
+  </body>
+</html>
