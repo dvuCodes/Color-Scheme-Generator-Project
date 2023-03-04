@@ -53,6 +53,7 @@ form {
 }
 
 .submit-btn {
+  color: black;
   word-wrap: break-word;
 }
 
@@ -78,6 +79,11 @@ input {
 
 .color-output {
   width: 20%;
-  height: 95%;
+  height: 94%;
   margin-bottom: 0.4em;
+}
+
+.color-output,
+.color-text {
+  cursor: pointer;
 }
