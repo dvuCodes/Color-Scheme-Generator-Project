@@ -7,11 +7,16 @@ function render(data) {
 }
 
 function getColorHtml(data) {
+  let id = 0;
   return data.colors
     .map(colors => {
       return `
-              <div class="color-output" style="background:${colors.hex.value}"></div>
-              <p>${colors.hex.value}</p>
+              <div class="color-output" style="background:${
+                colors.hex.value
+              }" data-id="${id}"></div>
+              <p class="color-text" id="color-text data-id="${id++}"">${
+        colors.hex.value
+      }</p>
               `;
     })
     .join('');

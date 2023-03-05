@@ -18,15 +18,20 @@ document.addEventListener('submit', e => {
 
   const options = {
     method: 'GET',
-    headers: { 'Content-type': 'application/join' },
   };
 
   fetch(
-    `https://www.thecolorapi.com/scheme?hex=${colorString}&mode=${schemeMode}`,
-    options
+    `https://www.thecolorapi.com/scheme?hex=${colorString}&mode=${schemeMode}`
   )
     .then(res => res.json())
     .then(data => {
       render(data);
     });
+});
+
+document.addEventListener('click', e => {
+  //   const hexText = document.getElementById('color-text').textContent;
+  console.log(e.target.dataset.id);
+
+  //   navigator.clipboard.writeText(hexText);
 });
