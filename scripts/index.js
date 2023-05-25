@@ -19,7 +19,6 @@ document.addEventListener('submit', e => {
   const options = {
     method: 'GET',
   };
-
   fetch(
     `https://www.thecolorapi.com/scheme?hex=${colorString}&mode=${schemeMode}`
   )
